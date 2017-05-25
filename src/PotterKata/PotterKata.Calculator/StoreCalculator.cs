@@ -1,13 +1,21 @@
 ﻿using System.Collections.Generic;
+using PotterKata.Business.Services;
 using PotterKata.Models.Books;
 
 namespace PotterKata.Calculator
 {
     public class StoreCalculator : IStoreCalculator
     {
-        public decimal Calculate(IList<HarryPotterBook> orderedBooks)
+        private readonly IDiscountService discountService;
+
+        public StoreCalculator(IDiscountService discountService)
         {
-            throw new System.NotImplementedException();
+            this.discountService = discountService;
+        }
+
+        public decimal Calculate(IList<HarryPotterBook> orderredBooks)
+        {
+            return orderredBooks.Count * Prices.HarryPotterPrice - discountService.CalculateDiscount(orderredBooks);
         }
     }
 }

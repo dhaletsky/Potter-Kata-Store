@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using PotterKata.Business.Services;
 using PotterKata.Calculator;
 using PotterKata.Models.Books;
 
@@ -13,7 +14,7 @@ namespace PotterKata.Tests.Calculator
         [TestInitialize]
         public void Initialize()
         {
-            calculator = new StoreCalculator();
+            calculator = new StoreCalculator(new DiscountService(new InterestService()));
         }
 
         [TestMethod]

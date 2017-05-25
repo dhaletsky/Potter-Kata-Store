@@ -44,6 +44,10 @@
     <Compile Include="StoreCalculator.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\PotterKata.Business\PotterKata.Business.csproj">
+      <Project>{e545ca79-5b8a-404d-aa4b-dcad0d6325a8}</Project>
+      <Name>PotterKata.Business</Name>
+    </ProjectReference>
     <ProjectReference Include="..\PotterKata.Models\PotterKata.Models.csproj">
       <Project>{73d382d1-03f8-47a4-9e5d-a2f7e377444f}</Project>
       <Name>PotterKata.Models</Name>
