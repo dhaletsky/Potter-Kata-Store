@@ -13,7 +13,7 @@ namespace PotterKata.Tests.Services
         [TestInitialize]
         public void Initialize()
         {
-            service = new DiscountService();
+            service = new DiscountService(new InterestService());
         }
 
         [TestMethod]

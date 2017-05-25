@@ -18,26 +18,26 @@ namespace PotterKata.Tests.Services
         [TestMethod]
         public void CalculatePercantage_30()
         {
-            Assert.AreEqual(0.3m, services.CalculatePercantage(30));
+            Assert.AreEqual(0.3m, services.CalculatePercentage(30));
         }
 
         [TestMethod]
         public void CalculatePercantage_Zero()
         {
-            Assert.AreEqual(0m, services.CalculatePercantage(0));
+            Assert.AreEqual(0m, services.CalculatePercentage(0));
         }
 
         [TestMethod]
         public void CalculatePercantage_MaxDiscount()
         {
-            Assert.AreEqual(1m, services.CalculatePercantage(100));
+            Assert.AreEqual(1m, services.CalculatePercentage(100));
         }
 
         [TestMethod]
         [ExpectedException(typeof(ArgumentOutOfRangeException))]
         public void CalculatePercantage_MoreThan100()
         {
-            services.CalculatePercantage(1000);
+            services.CalculatePercentage(1000);
         }
     }
 }

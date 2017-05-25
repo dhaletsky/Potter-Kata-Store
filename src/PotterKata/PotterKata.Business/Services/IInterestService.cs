@@ -2,6 +2,6 @@
 {
     public interface IInterestService
     {
-        decimal CalculatePercantage(ushort percentageDiscount);
+        decimal CalculatePercentage(ushort percentageDiscount);
     }
 }

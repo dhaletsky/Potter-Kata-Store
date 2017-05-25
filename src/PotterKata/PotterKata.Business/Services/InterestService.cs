@@ -4,7 +4,7 @@ namespace PotterKata.Business.Services
 {
     public class InterestService : IInterestService
     {
-        public decimal CalculatePercantage(ushort percentageDiscount)
+        public decimal CalculatePercentage(ushort percentageDiscount)
         {
             if (percentageDiscount > 100) throw new ArgumentOutOfRangeException("percentageDiscount", "Can`t be more than 100%");
 
