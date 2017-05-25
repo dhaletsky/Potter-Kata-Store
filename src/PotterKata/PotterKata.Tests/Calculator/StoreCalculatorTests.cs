@@ -30,7 +30,7 @@ namespace PotterKata.Tests.Calculator
         }
 
         [TestMethod]
-        public void Calculate_DifferentGroupBooks()
+        public void Calculate_2DifferentBooks()
         {
             var books = new List<HarryPotterBook>
             {
@@ -89,7 +89,7 @@ namespace PotterKata.Tests.Calculator
         }
 
         [TestMethod]
-        public void Calculate_AllDifferentSeries()
+        public void Calculate_AllDifferent()
         {
             var books = new List<HarryPotterBook>
             {

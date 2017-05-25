@@ -45,7 +45,7 @@ namespace PotterKata.Tests.Services
         }
 
         [TestMethod]
-        public void CalculateDiscount_AllSameBaooksInGroup()
+        public void CalculateDiscount_AllSameBooksInGroup()
         {
             var orderedBooks = new List<HarryPotterBook>
             {
