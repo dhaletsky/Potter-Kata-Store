@@ -1,6 +1,6 @@
 ﻿namespace PotterKata.Models.Books
 {
-    public class HarryPooterBook
+    public class HarryPotterBook
     {
         public BookTypes Type { get; set; }
     }
